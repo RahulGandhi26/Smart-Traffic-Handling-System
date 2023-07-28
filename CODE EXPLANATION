@@ -1,0 +1,29 @@
+Three sets of LEDs via Green, Yellow and Red are used to indicate the GO state, Ready to Go state and WAIT state. The traffic signal will be tuned with a default timing of 10 seconds of green light and all other signal will be red. After 10 seconds two signals will be yellow for 4 seconds and another two will be red. This condition will be followed till all the IR sensors receiving the signals or all the IR sensors are not getting signals. The LEDs G (green), Y (yellow) and R (red) glow in following sequence. 
+•	G1-R2-R3-R4 
+•	Y1-Y2-R3-R4 
+•	R1-G2-R3-R4 
+•	R1-Y2-Y3-R4. 
+•	R1-R2-G3-R4 
+•	R1-R2-Y3-Y4 
+•	R1-R2-R3-G4 
+•	Y1-R2-R3-Y4 
+i.e., timing-based traffic signal will be automatically implemented when all the signals having same condition.
+
+When condition changes, let us suppose when first side traffic signal is green and at that time third side traffic signal’s IR sensor receiving data then after first traffic signal it will automatically shifts towards third traffic signal without moving to second traffic signal. 
+•	G1-R2-R3-R4 
+•	Y1-R2-Y3-R4 
+•	R1-R2-G3-R4 
+
+
+
+
+
+Similarly, let green light is on in the fourth traffic signal for 10 seconds and during that time second traffic signal’s IR sensor receiving data then after green light it will take 4 seconds delay for yellow light or we can say that the delay for pedestrians to walk in order to ensure their safety and then it will automatically shift towards second traffic signal. 
+•	R1-R2-R3-G4 
+•	R1-Y2-R3-Y4 
+•	R1-G2-R3-R4 
+
+Just taking into consideration the above conditions further and let us suppose after second signal again forth signal’s IR sensor receiving data then after 10 seconds and 4 seconds delay signal is green for forth lane. 
+•	R1-G2-R3-R4 
+•	R1-Y2-R3-Y4 
+•	R1-R2-R3-G4
